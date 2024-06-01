@@ -7,7 +7,7 @@ from youtube_transcript_api import YouTubeTranscriptApi
 
 
 
-sentiment_bp = Blueprint('sentiment_bp', _name_)
+sentiment_bp = Blueprint('sentiment_bp', __name__)
 
 @sentiment_bp.route('/analyze', methods=['POST'])
 def analyze_sentiment():
